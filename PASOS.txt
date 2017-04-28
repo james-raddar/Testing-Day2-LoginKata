@@ -1,0 +1,11 @@
+/*** PASOS A SEGUIR PARA EL EJERCICIO ***/
+
+PREVIO: Usar MVP para facilitar el Testing
+
+1) Crear rama “Feature” (opcional). Creamos la pantalla de login con dos EditText para el nombre y password. También dos botones para el Login y el Logout
+
+2) Crear la clase SessionApiClient para simular el Login. Utilizaremos dos Threads, uno para hacer la petición en background y otro para asegurarnos que la petición es devuelta al hilo principal. Crear interfaces para luego poder usarlas en los tests sin depender del SDK de Android
+
+3) Simular que nos logueamos. Usaremos una variable para mantener la sesión.
+
+4) Hacer un Mock fake (wrapper) de las SharedPreferences para no depender del SDK de Android 
