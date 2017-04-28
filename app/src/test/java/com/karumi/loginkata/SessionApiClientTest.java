@@ -13,9 +13,9 @@ import static org.mockito.Mockito.when;
 
 public class SessionApiClientTest {
 
-    SessionApiClient sessionApiClient;
+    private SessionApiClient sessionApiClient;
     @Mock
-    TimeProvider mockTimeProvider;
+    private TimeProvider mockTimeProvider;
 
     @Before
     public void setUp() throws Exception {

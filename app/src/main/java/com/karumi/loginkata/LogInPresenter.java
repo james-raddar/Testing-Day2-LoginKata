@@ -5,7 +5,7 @@ public class LogInPresenter {
     private final SessionApiClient sessionApiClient;
     private final SessionStorage sessionStorage;
 
-    LogInView view;
+    private LogInView view;
     private boolean isLoggedIn;
 
     public LogInPresenter(SessionApiClient sessionApiClient, SessionStorage sessionStorage) {
@@ -14,7 +14,7 @@ public class LogInPresenter {
     }
 
     public void initialize() {
-        isLoggedIn = sessionStorage.getUser()!=null;
+        isLoggedIn = sessionStorage.getUser() != null;
         updateButtons();
         setLoading(false);
     }
